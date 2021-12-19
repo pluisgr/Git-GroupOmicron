@@ -1,7 +1,7 @@
 import json
 import requests
 requests.packages.urllib3.disable_warnings()
-ipr = '192.168.56.103'
+ipr = '10.10.0.254'
 urlb = 'https://' + ipr
 headers_router = {
     "Accept": "application/yang-data+json",
@@ -16,7 +16,7 @@ yangConfig = {
         "type": "iana-if-type:softwareLoopback", "enabled": True,
         "ietf-ip:ipv4": {
             "address": [
-                { "ip": "10.10.0.1",
+                { "ip": "10.10.1.8",
                 "netmask": "255.255.0.0"
                 }
             ]
